@@ -1,0 +1,21 @@
+x_d = 15;
+z_d = 23.66;
+k = 30*cos(pi/10)-15; 
+for t=0:0.05:1
+plot_final(0,5,30*cos(pi/10)-t*k,0,0,0,0,10,0,0,0,0,0);
+end
+for t=0:pi/120:pi/6
+plot_final(0,5,30*cos(pi/10)-k,0,0,0,0,10,0,0,0,t,0);
+end
+for t=0:pi/60:pi/3
+plot_final(0,5,30*cos(pi/10)-k,0,0,0,0,10,0,0,0,pi/6,t);
+end
+for t=0:pi/120:pi/6
+plot_final(0,5,30*cos(pi/10)-k,0,0,0,0,10,0,0,0,pi/6-t,pi/3);
+end
+for t=pi/3:pi/120:2*pi/5
+plot_final(0,5,30*cos(pi/10)-k,0,0,0,0,10,0,0,0,0,t);
+end
+for t=0:0.05:1
+plot_final(0,5,30*cos(pi/10)-k+k*t,0,0,0,0,10,0,0,0,0,2*pi/5);
+end
